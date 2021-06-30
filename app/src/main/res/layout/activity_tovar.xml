@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TovarActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewTovar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerviewTovar"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp">
+            <TextView
+                android:id="@+id/tovarNameTovar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Тауар аты:"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tovarCodeTovar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Тауар коды:"
+                android:textSize="18dp"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tovarPriceTovar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:text="Тауар бағасы:"
+                android:textSize="24dp"
+                android:textColor="@color/zerde"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btnAddToCart"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:text="Себетке қосу"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewDopInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Тауар туралы мәлімет"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tovarTuralyInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Here will be text about tovar and something else!"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/btnWatchVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:text="Видеоға обзор"
+                android:textColor="@color/zerde"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

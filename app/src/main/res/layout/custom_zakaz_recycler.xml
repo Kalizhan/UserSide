@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="@color/zerdeLight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvzakaz"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Zakaz"
+                            android:textColor="@color/zerdeLight"
+                            android:textSize="24dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/calendar" />
+
+                                <TextView
+                                    android:id="@+id/tventereddate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_weight="1"
+                                    android:paddingEnd="10dp"
+                                    android:text="entered date"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+
+                            <!--                        <LinearLayout-->
+                            <!--                            android:layout_width="match_parent"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:layout_marginTop="5dp"-->
+                            <!--                            android:orientation="horizontal">-->
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="20dp"-->
+                            <!--                                android:layout_height="match_parent"-->
+                            <!--                                android:src="@drawable/gps" />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:id="@+id/tvaddress"-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:text="Address"-->
+                            <!--                                android:layout_marginStart="5dp"-->
+                            <!--                                android:layout_gravity="center"-->
+                            <!--                                android:textColor="@color/black"-->
+                            <!--                                android:textSize="16dp" />-->
+                            <!--                        </LinearLayout>-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/tenge" />
+
+                                <TextView
+                                    android:id="@+id/tvzakazprice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:text="15000"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_marginTop="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="20dp"-->
+                    <!--                    android:layout_height="20dp"-->
+                    <!--                    android:src="@drawable/gps" />-->
+
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/tvaddress"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Address"-->
+                    <!--                    android:layout_marginStart="5dp"-->
+                    <!--                    android:layout_gravity="center"-->
+                    <!--                    android:textColor="@color/black"-->
+                    <!--                    android:textSize="16dp" />-->
+                    <!--            </LinearLayout>-->
+
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_marginTop="5dp"-->
+                    <!--                android:orientation="horizontal">-->
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="20dp"-->
+                    <!--                    android:layout_height="20dp"-->
+                    <!--                    android:src="@drawable/tenge" />-->
+
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/tvzakazprice"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_gravity="center"-->
+                    <!--                    android:layout_marginStart="5dp"-->
+                    <!--                    android:text="15000"-->
+                    <!--                    android:textColor="@color/black"-->
+                    <!--                    android:textStyle="bold" />-->
+                    <!--            </LinearLayout>-->
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginTop="8dp"-->
+                    <!--                        android:orientation="horizontal">-->
+
+                    <!--                        <ImageView-->
+                    <!--                            android:id="@+id/zakazSituationImage"-->
+                    <!--                            android:layout_width="20dp"-->
+                    <!--                            android:layout_height="20dp"-->
+                    <!--                            android:src="@drawable/timer" />-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/tvzakazsituation"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_gravity="center"-->
+                    <!--                            android:layout_marginStart="5dp"-->
+                    <!--                            android:text="in await"-->
+                    <!--                            android:textColor="@color/colorAccent"-->
+                    <!--                            android:textStyle="bold" />-->
+                    <!--                    </LinearLayout>-->
+
+                    <TextView
+                        android:id="@+id/tvcomment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="5dp"
+                        android:text="Comment"
+                        android:textStyle="italic"
+                        android:visibility="gone" />
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:orientation="vertical">-->
+
+                    <!--                <TextView-->
+                    <!--                    android:id="@+id/tvZakazTusti"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Тапсырысты алдыңыз ба?"-->
+                    <!--                    android:textSize="18dp"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:textColor="@color/black"-->
+                    <!--                    android:visibility="gone"-->
+                    <!--                    android:gravity="center"/>-->
+
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:orientation="horizontal"-->
+                    <!--                    android:layout_gravity="center">-->
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/btnAccept"-->
+                    <!--                        android:layout_width="40dp"-->
+                    <!--                        android:layout_height="40dp"-->
+                    <!--                        android:background="@drawable/checked"-->
+                    <!--                        android:layout_margin="3dp"-->
+                    <!--                        android:visibility="gone"/>-->
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/btnRemove"-->
+                    <!--                        android:layout_width="40dp"-->
+                    <!--                        android:layout_height="40dp"-->
+                    <!--                        android:background="@drawable/remove"-->
+                    <!--                        android:layout_margin="3dp"-->
+                    <!--                        android:visibility="gone"/>-->
+                    <!--                </LinearLayout>-->
+
+                    <!--            </LinearLayout>-->
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

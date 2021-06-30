@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/box" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:text="name of product"
+                    android:textColor="@color/black"
+                    android:textSize="22dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/idNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="00001"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/inProcess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Қолжетімсіз!"
+                        android:textColor="@color/red"
+                        android:textSize="12dp"
+                        android:textStyle="bold|italic"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/tenge" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="2560tg"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/del_circle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_remove_circle"
+                            android:layout_marginRight="10dp"/>
+
+                        <TextView
+                            android:id="@+id/text_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="17dp"
+                            android:text="0"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/add_circle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_add_circle"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout><!--<androidx.cardview.widget.CardView-->
+
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    app:cardCornerRadius="1dp"-->
+    <!--    app:cardElevation="1dp"-->
+    <!--    app:cardUseCompatPadding="true">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/linear_products"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="1dp"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:clickable="true"-->
+    <!--        android:foreground="?android:selectableItemBackground"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/productImage"-->
+    <!--            android:layout_width="90dp"-->
+    <!--            android:layout_height="90dp"-->
+    <!--            android:scaleType="centerInside"-->
+    <!--            android:src="@drawable/box" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_alignBottom="@id/productImage"-->
+    <!--            android:layout_toEndOf="@id/productImage"-->
+    <!--            android:layout_toRightOf="@id/productImage"-->
+    <!--            android:layout_marginRight="15dp"-->
+    <!--            android:layout_toLeftOf="@id/counter"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="10dp">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/title"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:paddingRight="10dp"-->
+    <!--                android:text="name"-->
+    <!--                android:gravity="center"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:singleLine="true"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="18dp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/price"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:text="28000 Тг"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textColor="@color/colorAccent" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/counter"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentRight="true"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginRight="5dp"-->
+    <!--            android:layout_marginBottom="5dp"-->
+    <!--            android:layout_weight="3"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/del_circle"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:srcCompat="@drawable/ic_remove_circle" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/text_count"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:layout_marginBottom="5dp"-->
+    <!--                android:text="0"-->
+    <!--                android:textSize="20dp" />-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/add_circle"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                app:srcCompat="@drawable/ic_add_circle" />-->
+
+    <!--        </LinearLayout>-->
+    <!--    </RelativeLayout>-->
+
+    <!--</androidx.cardview.widget.CardView>-->

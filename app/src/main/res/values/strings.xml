@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Zerde App(Users)</string>
+
+    <string name="title1">Басты бет</string>
+    <string name="title2">Тапсырыстар</string>
+    <string name="title3">Себет</string>
+    <string name="title4">Баптаулар</string>
+
+    <string name="pass"><u>Пароль есімде емес</u></string>
+
+    <string name="enter"><u>Кіру</u></string>
+    <string name="register"><u>Тіркелу</u></string>
+
+    <string-array name="jks">
+        <item>Қала(қосымша)</item>
+        <item>Нұр-Сұлтан</item>
+        <item>Алматы</item>
+        <item>Қарағанды</item>
+        <item>Шымкент</item>
+        <item>Ақтөбе</item>
+        <item>Өскемен</item>
+        <item>Семей</item>
+        <item>Павлодар</item>
+        <item>Қызылорда</item>
+        <item>Тараз</item>
+        <item>Орал</item>
+        <item>Қостанай</item>
+        <item>Петропавл</item>
+        <item>Талдықорған</item>
+        <item>Көкшетау</item>
+        <item>Ақтау</item>
+        <item>Атырау</item>
+        <item>Рудный</item>
+        <item>Теміртау</item>
+        <item>Түркістан</item>
+        <item>Екібастұз</item>
+        <item>Қаратау</item>
+        <item>Арыс</item>
+    </string-array>
+
+    <string-array name="pay">
+        <item>Kaspi Gold</item>
+        <item>Қолма-қол</item>
+    </string-array>
+
+    <string-array name="onlinePay">
+        <item>Толықтай төлеу</item>
+        <item>Жартылай төлеу</item>
+        <item>Тауарды алған соң төлеу</item>
+    </string-array>
+</resources>

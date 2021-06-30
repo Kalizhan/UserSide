@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/name_sort"
+        android:title="Аты бойынша"/>
+    <item
+        android:id="@+id/price_sort"
+        android:title="Бағасы бойынша"/>
+    <item
+        android:id="@+id/new_sort"
+        android:title="Жаңа тауарлар"/>
+    <item
+        android:id="@+id/sale_sort"
+        android:title="Сатылым бойынша"/>
+    <item
+        android:id="@+id/available_sort"
+        android:title="Қолжетімді тауарлар"/>
+
+</menu>

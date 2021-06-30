@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/zerdeLight</item>
+        <item name="colorPrimaryDark">@color/zerde</item>
+        <item name="colorAccent">@color/zerdeLight</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+<!--    <style name="Base_ToolbarStyle">-->
+<!--        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>-->
+<!--        <item name="android:background">?colorPrimary</item>-->
+<!--        <item name="android:theme">@style/Base_ToolbarTheme</item>-->
+<!--        <item name="titleTextAppearance">@style/CustomTitleTextAppearance</item>-->
+<!--        <item name="subtitleTextAppearance">@style/CustomSubTitleTextAppearance</item>-->
+<!--    </style>-->
+
+<!--    <style name="Base_ToolbarTheme">-->
+<!--        &lt;!&ndash; Color used for the title of the Toolbar - as long as not overridden &ndash;&gt;-->
+<!--        <item name="android:textColorPrimary">@color/teal_700</item>-->
+<!--        &lt;!&ndash; Used to color back button and three dots &ndash;&gt;-->
+<!--        <item name="android:textColorSecondary">@color/purple_200</item>-->
+<!--    </style>-->
+
+<!--    <style name="CustomTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">-->
+<!--        <item name="android:textSize">16sp</item>-->
+<!--        <item name="android:textColor">@color/purple_700</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--    </style>-->
+
+<!--    <style name="CustomSubTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">-->
+<!--        <item name="android:textSize">14sp</item>-->
+<!--        <item name="android:textColor">@color/teal_200</item>-->
+<!--        <item name="android:textStyle">italic</item>-->
+<!--    </style>-->
+
+</resources>
